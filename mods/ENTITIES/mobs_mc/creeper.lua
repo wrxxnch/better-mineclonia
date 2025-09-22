@@ -99,7 +99,7 @@ function creeper_defs:update_swell ()
 	if not self.attack
 		or not is_valid (self.attack)
 		or self._swell_time <= 0
-		or vector.distance (self_pos, target_pos) > 7.0
+		or vector.distance (self_pos, target_pos) > 6.0
 		or not self:target_visible (self_pos, self.attack) then
 		-- Cancel swelling if the target is no longer valid.
 		self._swell_dir = -1
